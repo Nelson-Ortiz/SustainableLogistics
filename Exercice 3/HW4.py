@@ -125,13 +125,13 @@ def main():
     search_parameters.first_solution_strategy = (
         routing_enums_pb2.FirstSolutionStrategy.PATH_CHEAPEST_ARC)
 
-    #solve the problem
-    solution=routing.SolveWithParameters(search_parameters)
+    # solve the problem
+    solution = routing.SolveWithParameters(search_parameters)
+
 
     # Print solution on console.
     if solution:
-        print_solution(data,manager, routing, solution)
-
+        print_solution(data, manager, routing, solution)
 
 
 if __name__ == '__main__':
